@@ -1,0 +1,1324 @@
+[
+  {
+    "id": "g01",
+    "day": 1,
+    "level": "A1",
+    "title": "Parts of Speech",
+    "summary": "Identify the basic jobs words do in a sentence.",
+    "plainExplanation": "Every word in a sentence has a job. Some words name things (nouns), some replace those names (pronouns), some show action (verbs), and others describe or connect. Once you can label the job of each word, every other grammar rule in this course becomes much easier to understand.",
+    "steps": [
+      "Find the main action or state first — that word is the verb.",
+      "Ask 'who or what does the action?' — that word (or phrase) is the subject, usually a noun or pronoun.",
+      "Look for words that describe the noun (what kind? which one? how many?) — those are adjectives.",
+      "Look for words that describe the verb, an adjective, or another adverb (how? when? where?) — those are adverbs.",
+      "Find any small connecting word showing place, time or direction (in, on, at, under) — that is a preposition.",
+      "Find any word joining two ideas together (and, but, because) — that is a conjunction."
+    ],
+    "rule": "Nouns name people, places, things or ideas; verbs show actions or states; adjectives describe nouns; adverbs modify verbs, adjectives or other adverbs.",
+    "structure": "Subject (noun/pronoun) + verb + object/complement",
+    "examples": [
+      "Students study English.",
+      "The careful student works quietly.",
+      "Knowledge is valuable."
+    ],
+    "quiz": [
+      {
+        "q": "Which word is the verb in 'Students study English'?",
+        "options": [
+          "Students",
+          "study",
+          "English",
+          "the"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Which word is an adjective in 'a careful student'?",
+        "options": [
+          "a",
+          "careful",
+          "student",
+          "is"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "g02",
+    "day": 2,
+    "level": "A1",
+    "title": "Subject and Verb Agreement",
+    "summary": "Match singular and plural subjects with the correct verb form.",
+    "plainExplanation": "The verb has to 'match' its subject. One person or thing (he, she, it, or a singular noun) uses the verb form with -s. More than one (I, you, we, they, or a plural noun) uses the plain verb form without -s. Getting this match right is one of the very first things people notice in your English.",
+    "steps": [
+      "Identify the subject of the sentence — is it one thing/person, or more than one?",
+      "If singular (he/she/it or a singular noun), add -s or -es to the present simple verb.",
+      "If plural (I/you/we/they or a plural noun), use the base verb with no ending.",
+      "Check tricky subjects like everyone, the team, or the news — these look plural but are grammatically singular.",
+      "When two subjects are joined by 'and', treat them as plural; when joined by 'or'/'nor', match the verb to the subject closest to it."
+    ],
+    "rule": "In the present simple, a singular third-person subject normally takes a verb ending in -s/-es; plural subjects use the base form.",
+    "structure": "Singular subject + verb-s/es | Plural subject + base verb",
+    "examples": [
+      "She works every day.",
+      "They work every day.",
+      "The students study together."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "He work hard.",
+          "He works hard.",
+          "He working hard.",
+          "He workes hard."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "The students studies.",
+          "The students studying.",
+          "The students study.",
+          "The students studys."
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "g03",
+    "day": 3,
+    "level": "A1",
+    "title": "Present Simple",
+    "summary": "Use the present simple for routines, facts and repeated actions.",
+    "plainExplanation": "The present simple describes things that are generally true, that happen regularly, or that follow a fixed schedule — not things happening right now. Think of it as your 'facts and routines' tense: 'I work', 'the sun rises', 'the train leaves at 9'.",
+    "steps": [
+      "Decide if the sentence is about a habit, a fact, or a schedule rather than something happening right now.",
+      "Use the base verb for I/you/we/they (I work, they play).",
+      "Add -s or -es for he/she/it (she works, it rains) — remember -es after s, x, ch, sh, o.",
+      "For negatives, use do not/does not + base verb (I don't work, she doesn't work).",
+      "For questions, put do/does before the subject (Do you work? Does she work?)."
+    ],
+    "rule": "Use the base verb with I/you/we/they and -s/-es with he/she/it. Use do/does for questions and negatives.",
+    "structure": "Subject + base/-s verb | Do/Does + subject + base verb?",
+    "examples": [
+      "I study at night.",
+      "She studies at night.",
+      "Does he study every day?"
+    ],
+    "quiz": [
+      {
+        "q": "Which sentence describes a routine?",
+        "options": [
+          "I studied yesterday.",
+          "I am studying now.",
+          "I study every evening.",
+          "I will study tomorrow."
+        ],
+        "answer": 2
+      },
+      {
+        "q": "Choose the correct question.",
+        "options": [
+          "Does she likes tea?",
+          "Does she like tea?",
+          "Do she like tea?",
+          "Does she liking tea?"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "g04",
+    "day": 4,
+    "level": "A1",
+    "title": "Present Continuous",
+    "summary": "Describe actions happening now or around the present time.",
+    "plainExplanation": "The present continuous describes an action happening right now, or a temporary situation around the present time. It is built with am/is/are + the -ing form of the verb, and it answers the question 'what is happening at this moment?'",
+    "steps": [
+      "Check whether the action is happening now, or is a temporary/changing situation (not a permanent fact).",
+      "Choose the correct form of 'be' for the subject: am (I), is (he/she/it), are (you/we/they).",
+      "Add -ing to the main verb (work → working, run → running — double the final consonant for short verbs like run, sit, stop).",
+      "For negatives, add not after the be-verb (I am not working, she isn't working).",
+      "For questions, move the be-verb before the subject (Are you working? Is she working?)."
+    ],
+    "rule": "Use am/is/are + verb-ing for an action in progress.",
+    "structure": "Subject + am/is/are + verb-ing",
+    "examples": [
+      "I am reading now.",
+      "She is preparing dinner.",
+      "They are studying for an exam."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "She is study now.",
+          "She studying now.",
+          "She is studying now.",
+          "She studies now yesterday."
+        ],
+        "answer": 2
+      },
+      {
+        "q": "Which form completes 'They ___ working'?",
+        "options": [
+          "is",
+          "are",
+          "am",
+          "be"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "g05",
+    "day": 5,
+    "level": "A1",
+    "title": "Past Simple",
+    "summary": "Talk about completed actions in the past.",
+    "plainExplanation": "The past simple describes a completed action that happened at a specific, finished time in the past. If you can attach a time word like 'yesterday', 'last week', or 'in 2019' and the action is fully over, the past simple is usually the right choice.",
+    "steps": [
+      "Confirm the action is finished and happened at a definite past time.",
+      "For regular verbs, add -ed to the base form (work → worked, study → studied).",
+      "For irregular verbs, learn the past form individually — it does not follow the -ed pattern (go → went, see → saw).",
+      "For negatives, use did not (didn't) + base verb, even with irregular verbs (I didn't go, not I didn't went).",
+      "For questions, put did before the subject and use the base verb (Did you go? Did she see it?)."
+    ],
+    "rule": "Use the past form of the verb. Regular verbs commonly take -ed; irregular verbs have special forms.",
+    "structure": "Subject + past verb",
+    "examples": [
+      "I visited Yangon last week.",
+      "She went home early.",
+      "They finished the project yesterday."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct past form of 'go'.",
+        "options": [
+          "goed",
+          "went",
+          "gone",
+          "going"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "They finish yesterday.",
+          "They finished yesterday.",
+          "They have finish yesterday.",
+          "They are finish yesterday."
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "g06",
+    "day": 6,
+    "level": "A2",
+    "title": "Past Continuous",
+    "summary": "Describe an action that was in progress at a particular past time.",
+    "plainExplanation": "The past continuous shows an action that was already in progress at a specific past moment — often interrupted by another, shorter action. Picture yourself in the middle of doing something when something else happened.",
+    "steps": [
+      "Identify the longer, 'in-progress' action and the shorter action that interrupted or happened at the same time.",
+      "Use was/were + verb-ing for the longer action (was working, were studying).",
+      "Use the past simple for the shorter, interrupting action (...when the phone rang).",
+      "Join the two with 'when' (interruption) or 'while' (two actions happening together).",
+      "Remember: was for I/he/she/it, were for you/we/they."
+    ],
+    "rule": "Use was/were + verb-ing. It often sets the background for another past event.",
+    "structure": "Subject + was/were + verb-ing",
+    "examples": [
+      "I was studying at 8 p.m.",
+      "They were talking when I arrived.",
+      "She was sleeping while it was raining."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct form: 'They ___ watching TV when I called.'",
+        "options": [
+          "was",
+          "were",
+          "are",
+          "have"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Which sentence is grammatically correct?",
+        "options": [
+          "He was drive home.",
+          "He were driving home.",
+          "He was driving home.",
+          "He driving home."
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "g07",
+    "day": 7,
+    "level": "A2",
+    "title": "Present Perfect",
+    "summary": "Connect past actions with the present.",
+    "plainExplanation": "The present perfect connects the past to now. It is used for experiences at an unspecified time, actions that started in the past and continue now, or past actions with a result that matters right now. The key clue is that there is no specific finished time mentioned.",
+    "steps": [
+      "Check if there is no specific past time word (no 'yesterday', 'in 2020') — if there is one, use past simple instead.",
+      "Build the form with have/has + past participle (have worked, has gone, have seen).",
+      "Use 'has' for he/she/it and 'have' for I/you/we/they.",
+      "Use it for life experience (I have visited Paris), unfinished time (I have lived here for 5 years), or a past action with a present result (I have lost my keys — I don't have them now).",
+      "Pair with 'ever/never', 'already/yet', 'since/for', and 'just' as common signal words."
+    ],
+    "rule": "Use have/has + past participle for experiences, recent results and unfinished time periods.",
+    "structure": "Subject + have/has + past participle",
+    "examples": [
+      "I have finished my work.",
+      "She has visited Thailand twice.",
+      "They have lived here since 2022."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "She has went home.",
+          "She has gone home.",
+          "She have gone home.",
+          "She gone home."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Which word commonly introduces a starting point?",
+        "options": [
+          "since",
+          "during",
+          "ago",
+          "while"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g08",
+    "day": 8,
+    "level": "A2",
+    "title": "Past Perfect",
+    "summary": "Show that one past event happened before another past event.",
+    "plainExplanation": "The past perfect shows which of two past events happened first — it is the 'past before the past'. If you are already talking about the past and need to step back even earlier, the past perfect does that job.",
+    "steps": [
+      "Identify two past events and decide which one happened earlier.",
+      "Use had + past participle for the earlier event (had finished, had left).",
+      "Use the past simple for the later event (...when I arrived).",
+      "Join the two events with words like 'when', 'after', 'before', or 'by the time'.",
+      "Avoid overusing the past perfect — only use it when the order of two past events needs to be made clear."
+    ],
+    "rule": "Use had + past participle for the earlier of two past events.",
+    "structure": "Earlier event: had + past participle → later event: past simple",
+    "examples": [
+      "The train had left before we arrived.",
+      "She had finished the report when the manager called.",
+      "I had never seen snow before that trip."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "They had left before I arrived.",
+          "They have left before I arrived.",
+          "They had leave before I arrived.",
+          "They leaving before I arrived."
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Which event normally uses past perfect?",
+        "options": [
+          "The earlier past event",
+          "The later past event",
+          "A future event",
+          "A general fact"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g09",
+    "day": 9,
+    "level": "A2",
+    "title": "Future Forms",
+    "summary": "Use will, be going to and present continuous for different future meanings.",
+    "plainExplanation": "English has several ways to talk about the future, and the choice depends on how certain, planned, or spontaneous the action is. There is no single 'future tense' the way there is a past tense — instead, you choose the form that matches your intention.",
+    "steps": [
+      "For a spontaneous decision made at the moment of speaking, use will + base verb (I'll answer the phone).",
+      "For a prior plan or intention, use be going to + base verb (I'm going to visit my parents).",
+      "For a fixed schedule or timetable, use the present simple (The train leaves at 6pm).",
+      "For a definite personal arrangement already made with someone, use the present continuous (I'm meeting her tomorrow).",
+      "For an action that will be in progress at a future time, use will be + verb-ing (I'll be working at 8pm)."
+    ],
+    "rule": "Will often expresses decisions, predictions or promises; going to often expresses plans or evidence-based predictions; present continuous can express arranged future events.",
+    "structure": "will + base | am/is/are going to + base | am/is/are + verb-ing",
+    "examples": [
+      "I will call you later.",
+      "We are going to start a course.",
+      "I am meeting my tutor tomorrow."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the best form for a prior plan: 'We ___ visit the museum tomorrow.'",
+        "options": [
+          "are going to",
+          "have",
+          "were",
+          "did"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "I will to help you.",
+          "I will help you.",
+          "I will helping you.",
+          "I am will help you."
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "g10",
+    "day": 10,
+    "level": "A2",
+    "title": "Articles: a, an, the",
+    "summary": "Use articles to show whether a noun is general or specific.",
+    "plainExplanation": "Articles (a, an, the) tell the listener whether you mean any one example of something (a/an) or one specific, already-known thing (the). Getting this small word right makes a huge difference to how natural your English sounds.",
+    "steps": [
+      "Decide if the noun is countable and singular — only then can you use a/an at all.",
+      "Use 'a' before a consonant sound and 'an' before a vowel sound (a university, an hour — go by sound, not spelling).",
+      "Use 'a/an' the first time you mention something, or when it doesn't matter which one you mean.",
+      "Use 'the' when both speaker and listener know exactly which one you mean (already mentioned, unique, or obvious from context).",
+      "Use no article at all for general/plural or uncountable nouns speaking in general (Dogs are loyal; I like music)."
+    ],
+    "rule": "Use a/an for a singular countable noun when it is non-specific or first mentioned. Use the for a specific or already identified noun.",
+    "structure": "a/an + singular countable noun | the + specific noun",
+    "examples": [
+      "I saw a dog. The dog was friendly.",
+      "She is an engineer.",
+      "Please close the door."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "She is engineer.",
+          "She is an engineer.",
+          "She is the engineer always.",
+          "She is an engineers."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "After introducing 'a book', which is natural when referring to the same book again?",
+        "options": [
+          "a book",
+          "an book",
+          "the book",
+          "book the"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "g11",
+    "day": 11,
+    "level": "A2",
+    "title": "Countable and Uncountable Nouns",
+    "summary": "Use nouns and quantifiers accurately.",
+    "plainExplanation": "Countable nouns can be counted one by one and have a plural form (one book, two books). Uncountable nouns are treated as a whole mass or idea and normally have no plural form (water, advice, information). This affects which quantity words you can use with them.",
+    "steps": [
+      "Ask: can I put a number directly in front of this noun? (one chair, two chairs) — if yes, it's countable.",
+      "If the noun describes a substance, liquid, or abstract idea with no natural 'one unit', it's likely uncountable.",
+      "For countable nouns, use a/an, many, few, a number of, and a plural form.",
+      "For uncountable nouns, use some, much, a little, a lot of — and keep the noun singular in form.",
+      "Watch for words that are countable in some languages but uncountable in English, like advice, information, furniture, and news."
+    ],
+    "rule": "Countable nouns can be singular/plural; uncountable nouns are treated as non-count nouns and do not normally take a/an.",
+    "structure": "a/an + singular countable | some/much + uncountable | many + plural countable",
+    "examples": [
+      "a student / two students",
+      "some information",
+      "many ideas",
+      "much time"
+    ],
+    "quiz": [
+      {
+        "q": "Which phrase is correct?",
+        "options": [
+          "an information",
+          "many information",
+          "some information",
+          "two informations"
+        ],
+        "answer": 2
+      },
+      {
+        "q": "Which noun is countable here?",
+        "options": [
+          "water",
+          "advice",
+          "idea",
+          "information"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "g12",
+    "day": 12,
+    "level": "A2",
+    "title": "Pronouns and Possessives",
+    "summary": "Avoid repeated nouns and show ownership clearly.",
+    "plainExplanation": "Pronouns replace nouns so we don't repeat them, and possessives show ownership. English pronouns change form depending on their job in the sentence — as the subject, the object, or showing possession.",
+    "steps": [
+      "Identify whether the pronoun is doing the action (subject: I, you, he, she, it, we, they).",
+      "Or receiving the action (object: me, you, him, her, it, us, them).",
+      "Choose a possessive adjective before a noun to show ownership (my book, her car).",
+      "Choose a possessive pronoun to replace a noun + possessive adjective entirely (This book is mine, not This book is my).",
+      "Use reflexive pronouns (myself, himself, themselves) when the subject and object are the same person."
+    ],
+    "rule": "Subject pronouns act as subjects; object pronouns follow verbs/prepositions; possessive adjectives come before nouns; possessive pronouns stand alone.",
+    "structure": "I/he/she/they | me/him/her/them | my/his/her/their + noun | mine/his/hers/theirs",
+    "examples": [
+      "She called me.",
+      "This is my book.",
+      "The blue bag is mine."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "Me am ready.",
+          "I am ready.",
+          "Mine am ready.",
+          "My am ready."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Choose the correct possessive form: 'This phone belongs to her.'",
+        "options": [
+          "her phone",
+          "hers phone",
+          "she phone",
+          "her's phone"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g13",
+    "day": 13,
+    "level": "B1",
+    "title": "Modal Verbs",
+    "summary": "Express ability, possibility, permission, advice and obligation.",
+    "plainExplanation": "Modal verbs (can, could, may, might, must, should, will, would) add meaning like ability, permission, possibility, or obligation to a main verb. Each modal changes the 'strength' or 'certainty' of what you're saying.",
+    "steps": [
+      "Decide what kind of meaning you need: ability, permission, advice, obligation, or possibility.",
+      "Choose the modal that matches — can/could for ability, may/might for possibility, must/have to for obligation, should for advice.",
+      "Always follow a modal verb with the base form of the main verb, with no 'to' (You must go, not You must to go).",
+      "Modals do not change form for he/she/it — no extra -s is added (She can swim, not She cans swim).",
+      "For negatives, add 'not' directly after the modal (cannot, should not, must not)."
+    ],
+    "rule": "Modal verbs are followed by the base form: can go, should study, must leave. They do not take -s after he/she/it.",
+    "structure": "Subject + modal + base verb",
+    "examples": [
+      "You should practise.",
+      "He can swim.",
+      "Students must follow the rules."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "She can speaks English.",
+          "She can speak English.",
+          "She can speaking English.",
+          "She can spoke English."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Which modal commonly gives advice?",
+        "options": [
+          "should",
+          "mustn't",
+          "can",
+          "wouldn't"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g14",
+    "day": 14,
+    "level": "B1",
+    "title": "Comparatives and Superlatives",
+    "summary": "Compare people, things and ideas accurately.",
+    "plainExplanation": "Comparatives compare two things (bigger, more interesting) and superlatives compare three or more, picking out the extreme (the biggest, the most interesting). The form you use depends mainly on how many syllables the adjective has.",
+    "steps": [
+      "Count the syllables in the adjective.",
+      "For short adjectives (1 syllable, some 2-syllable), add -er/-est (tall → taller → tallest).",
+      "For longer adjectives (2+ syllables), use more/most before the adjective (more interesting, most interesting).",
+      "Watch for spelling changes: happy → happier, big → bigger (double the consonant).",
+      "Memorise irregular forms separately: good → better → best, bad → worse → worst."
+    ],
+    "rule": "Short adjectives often use -er/-est; longer adjectives commonly use more/most.",
+    "structure": "A + be + comparative + than B | the + superlative",
+    "examples": [
+      "This book is cheaper than that one.",
+      "This is the most useful chapter.",
+      "She is more confident than before."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "This is more cheap than that.",
+          "This is cheaper than that.",
+          "This is cheapest than that.",
+          "This is cheap than that."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Choose the superlative form of 'important'.",
+        "options": [
+          "importantest",
+          "more important",
+          "most important",
+          "the more important"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "g15",
+    "day": 15,
+    "level": "B1",
+    "title": "Prepositions of Time and Place",
+    "summary": "Use in, on, at and other prepositions precisely.",
+    "plainExplanation": "Prepositions of time and place are small words (in, on, at) that show when or where something happens. English uses different prepositions depending on how specific the time or place is — a rule that often does not match other languages, so it needs deliberate practice.",
+    "steps": [
+      "For time, use 'at' for precise clock times and short periods (at 6pm, at night).",
+      "Use 'on' for specific days and dates (on Monday, on July 1st).",
+      "Use 'in' for longer periods — months, years, seasons, centuries (in May, in 2024, in summer).",
+      "For place, use 'at' for a specific point (at the bus stop), 'on' for a surface (on the table), and 'in' for an enclosed space (in the box, in London).",
+      "Memorise common fixed expressions that don't follow the general pattern (in time, on time, at the weekend/on the weekend)."
+    ],
+    "rule": "Common time patterns: at + exact time, on + day/date, in + month/year/period. Place patterns depend on location and relationship.",
+    "structure": "at 8:00 | on Monday | in July | in 2026",
+    "examples": [
+      "The class starts at 9.",
+      "I study on Monday.",
+      "She arrived in June."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct phrase.",
+        "options": [
+          "at Monday",
+          "on Monday",
+          "in Monday",
+          "by Monday at every case"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Choose the correct phrase for a year.",
+        "options": [
+          "at 2026",
+          "on 2026",
+          "in 2026",
+          "by in 2026"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "g16",
+    "day": 16,
+    "level": "B1",
+    "title": "Gerunds and Infinitives",
+    "summary": "Know when verbs are followed by -ing or to + verb.",
+    "plainExplanation": "Gerunds (verb + -ing used as a noun) and infinitives (to + base verb) both let a verb act like a noun, but different verbs, adjectives, and expressions insist on one or the other. There is no shortcut except learning which verbs take which pattern.",
+    "steps": [
+      "Identify the main verb in the sentence that controls the pattern (enjoy, want, decide, avoid, etc.).",
+      "Check whether that verb is followed by a gerund (enjoy swimming), an infinitive (want to swim), or both with a meaning change (stop to rest vs stop resting).",
+      "Use a gerund after prepositions (interested in learning, good at cooking).",
+      "Use the infinitive to express purpose (I called to ask a question).",
+      "When in doubt with a new verb, look up or memorise its typical pattern rather than guessing from translation."
+    ],
+    "rule": "Some verbs take gerunds, some take infinitives, and some allow both with meaning changes.",
+    "structure": "verb + verb-ing | verb + to + base",
+    "examples": [
+      "I enjoy reading.",
+      "She decided to leave.",
+      "They avoided making mistakes."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the natural sentence.",
+        "options": [
+          "I enjoy to read.",
+          "I enjoy reading.",
+          "I enjoying read.",
+          "I enjoy readed."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Choose the correct form: 'She decided ___ early.'",
+        "options": [
+          "leave",
+          "leaving",
+          "to leave",
+          "left"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "g17",
+    "day": 17,
+    "level": "B1",
+    "title": "Relative Clauses",
+    "summary": "Combine information using who, which, that and where.",
+    "plainExplanation": "Relative clauses add extra information about a noun without starting a new sentence. They are introduced by words like who, which, that, whose, where, and when, and they let you combine two short sentences into one smoother one.",
+    "steps": [
+      "Find the noun you want to describe further.",
+      "Choose the right relative pronoun: who/that for people, which/that for things, whose for possession, where for places, when for times.",
+      "Decide if the clause is defining (essential, no commas) or non-defining (extra, needs commas) — 'The man who called is my boss' vs 'My boss, who called earlier, is busy.'",
+      "In defining clauses, 'that' can replace who/which, and the pronoun can sometimes be dropped if it's the object (The book (that) I read).",
+      "Never drop the relative pronoun in a non-defining clause, and never use 'that' after a comma."
+    ],
+    "rule": "Relative clauses describe a noun. Who is common for people; which for things; that can be used in many defining clauses.",
+    "structure": "noun + relative word + clause",
+    "examples": [
+      "The student who won is my friend.",
+      "The book that I bought is useful.",
+      "This is the place where we met."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct relative word for a person.",
+        "options": [
+          "who",
+          "where",
+          "whicher",
+          "what"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "The book who I bought is new.",
+          "The book which I bought is new.",
+          "The book where I bought is new.",
+          "The book whom I bought is new."
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "g18",
+    "day": 18,
+    "level": "B1",
+    "title": "Conditionals 0 and 1",
+    "summary": "Express general truths and real future possibilities.",
+    "plainExplanation": "Conditional sentences describe cause-and-effect situations using 'if'. The zero conditional states general truths and facts; the first conditional talks about real, possible future situations and their likely results.",
+    "steps": [
+      "Zero conditional: use if + present simple, present simple — for facts that are always true (If you heat ice, it melts).",
+      "First conditional: use if + present simple, will + base verb — for a realistic future possibility (If it rains, I will stay home).",
+      "Keep the 'if' clause in the present tense even when talking about the future — never use 'will' in the if-clause itself.",
+      "The order of clauses can be reversed; add a comma only when 'if' comes first.",
+      "Replace 'if' with 'when' in the zero conditional if the result is a certainty, not just a possibility."
+    ],
+    "rule": "Zero conditional uses present + present for general truths. First conditional uses if + present, will + base for real future possibilities.",
+    "structure": "If + present, present | If + present, will + base",
+    "examples": [
+      "If you heat ice, it melts.",
+      "If I finish early, I will call you.",
+      "If it rains, we will stay home."
+    ],
+    "quiz": [
+      {
+        "q": "Which is a zero conditional?",
+        "options": [
+          "If you heat ice, it melts.",
+          "If I study, I will pass.",
+          "If I studied, I would pass.",
+          "If I had studied, I would have passed."
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Choose the first conditional sentence.",
+        "options": [
+          "If she studies, she will improve.",
+          "If she studied, she would improve.",
+          "If she had studied, she would have improved.",
+          "If she studies, she improved yesterday."
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g19",
+    "day": 19,
+    "level": "B1",
+    "title": "Passive Voice",
+    "summary": "Focus on an action or result rather than the doer.",
+    "plainExplanation": "The passive voice shifts the focus from who did an action to what happened to the object. It's used when the doer is unknown, unimportant, or obvious, or when you want to sound more formal or objective — common in news, science, and reports.",
+    "steps": [
+      "Find the object of the active sentence — this becomes the new subject in the passive.",
+      "Use the correct form of be + past participle (is made, was written, has been sent).",
+      "Match the tense of 'be' to the tense of the original active sentence (write → is written; wrote → was written).",
+      "Only add 'by + agent' if it's genuinely important to say who did the action.",
+      "Avoid overusing the passive — it can sound vague or evasive if used when the doer actually matters."
+    ],
+    "rule": "Passive voice uses a form of be + past participle. The tense is carried by be.",
+    "structure": "Object + be (correct tense) + past participle",
+    "examples": [
+      "The essay is checked every day.",
+      "The bridge was built in 2010.",
+      "The results will be announced tomorrow."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the passive sentence.",
+        "options": [
+          "Students check the essays.",
+          "The essays are checked.",
+          "Students are checking essays.",
+          "Students checked essays."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Complete: 'The results ___ tomorrow.'",
+        "options": [
+          "will announce",
+          "will be announced",
+          "are announce",
+          "announced be"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "g20",
+    "day": 20,
+    "level": "B2",
+    "title": "Reported Speech",
+    "summary": "Report what someone said while controlling tense, pronouns and time expressions.",
+    "plainExplanation": "Reported speech (indirect speech) reports what someone said without quoting their exact words. When the reporting verb is in the past ('she said'), tenses, pronouns, and time/place words usually shift 'one step back' to stay logical.",
+    "steps": [
+      "Identify the original direct speech and the reporting verb (said, told, asked).",
+      "Shift the tense back one step: present simple → past simple, present perfect → past perfect, will → would.",
+      "Change pronouns to match the new speaker's perspective (I → she/he).",
+      "Change time and place words if needed (today → that day, here → there, tomorrow → the next day).",
+      "For reported questions, use normal word order (not question order) and no question mark: She asked where I lived, not She asked where did I live."
+    ],
+    "rule": "In many reporting contexts, present forms shift back one tense: 'I am tired' → He said he was tired. Pronouns and time references may also change.",
+    "structure": "reporting verb + (that) + reported clause",
+    "examples": [
+      "She said that she was busy.",
+      "He told me that he needed help.",
+      "They said they would return later."
+    ],
+    "quiz": [
+      {
+        "q": "Direct: 'I am busy.' Reported: She said that she ___ busy.",
+        "options": [
+          "is",
+          "was",
+          "be",
+          "has"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Choose the correct reporting pattern.",
+        "options": [
+          "He told that me he was tired.",
+          "He told me that he was tired.",
+          "He said me that he was tired.",
+          "He told me he tired was."
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "id": "g21",
+    "day": 21,
+    "level": "B2",
+    "title": "Conditionals 2 and 3",
+    "summary": "Discuss hypothetical present/future situations and unreal past situations.",
+    "plainExplanation": "The second conditional talks about unreal or unlikely present/future situations and their imagined results. The third conditional talks about unreal past situations — things that didn't actually happen — and their imagined past results.",
+    "steps": [
+      "Second conditional: if + past simple, would + base verb — for something unlikely or imaginary now (If I won the lottery, I would travel).",
+      "Third conditional: if + past perfect, would have + past participle — for an imagined different past (If I had studied, I would have passed).",
+      "Remember: the 'if' clause tense does not match its real-world time — past simple in the second conditional still refers to the present/future.",
+      "Use 'were' instead of 'was' for all subjects in formal second conditional style (If I were you...).",
+      "Don't mix real tenses into these — 'If I would win' is a common error; keep 'would' only in the result clause."
+    ],
+    "rule": "Second conditional: if + past, would + base. Third conditional: if + past perfect, would have + past participle.",
+    "structure": "If + past, would + base | If + had + pp, would have + pp",
+    "examples": [
+      "If I had more time, I would study more.",
+      "If she were here, she would help.",
+      "If they had left earlier, they would have arrived on time."
+    ],
+    "quiz": [
+      {
+        "q": "Which sentence is second conditional?",
+        "options": [
+          "If I have time, I will go.",
+          "If I had time, I would go.",
+          "If I had had time, I would have gone.",
+          "If I have had time, I went."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Which form belongs in a third conditional if-clause?",
+        "options": [
+          "past simple",
+          "present simple",
+          "past perfect",
+          "future simple"
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "id": "g22",
+    "day": 22,
+    "level": "B2",
+    "title": "Complex Sentences and Subordination",
+    "summary": "Build precise relationships between ideas using dependent clauses.",
+    "plainExplanation": "Complex sentences combine an independent clause (a complete idea) with one or more dependent clauses (incomplete on their own) using subordinating conjunctions. This lets you show precise relationships — cause, time, contrast, condition — between ideas instead of just listing simple sentences.",
+    "steps": [
+      "Identify your main idea — this becomes the independent clause.",
+      "Identify the supporting idea and its relationship to the main one (reason, time, contrast, condition).",
+      "Choose a subordinating conjunction that matches: because/since (reason), although/even though (contrast), when/while (time), if/unless (condition).",
+      "Attach the dependent clause before or after the main clause — add a comma only when the dependent clause comes first.",
+      "Check that the dependent clause cannot stand alone as a full sentence — if it can, you may have written two independent clauses instead."
+    ],
+    "rule": "Use subordinators such as although, whereas, because, while and unless to show contrast, cause, time or condition.",
+    "structure": "Main clause + subordinator + dependent clause",
+    "examples": [
+      "Although it was expensive, the course was useful.",
+      "Because she practised, her writing improved.",
+      "Unless you revise, you may forget the rule."
+    ],
+    "quiz": [
+      {
+        "q": "Which connector shows contrast?",
+        "options": [
+          "because",
+          "although",
+          "therefore",
+          "so that"
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "Although it rained, we went out.",
+          "Although it rained, but we went out.",
+          "Although rained, we went out.",
+          "Although it raining, we went out."
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g23",
+    "day": 23,
+    "level": "B2",
+    "title": "Modals of Deduction",
+    "summary": "Express logical certainty and possibility about present and past situations.",
+    "plainExplanation": "Modals of deduction let you guess how certain something is, based on evidence, without stating it as a plain fact. 'Must' shows strong certainty, 'might/could/may' show possibility, and 'can't' shows strong certainty that something is false.",
+    "steps": [
+      "Assess how confident you are in your guess, based on the evidence you have.",
+      "For strong positive certainty, use must + base verb (present) or must have + past participle (past): He must be tired / He must have forgotten.",
+      "For possibility, use might/could/may + base verb or + have + past participle: She might be at work / She might have left already.",
+      "For strong negative certainty, use can't/couldn't + base verb or + have + past participle — never 'mustn't' for this meaning: That can't be true.",
+      "Match the modal + verb form to whether you are deducing about now/general (base verb) or the past (have + past participle)."
+    ],
+    "rule": "Use must for strong positive deduction, might/may/could for possibility, and can't for strong negative deduction. Past deductions use have + past participle.",
+    "structure": "must/might/can't + base | must/might/can't + have + pp",
+    "examples": [
+      "She must be tired.",
+      "He might be at home.",
+      "They can't have forgotten the meeting."
+    ],
+    "quiz": [
+      {
+        "q": "Which modal shows strong positive deduction?",
+        "options": [
+          "must",
+          "might",
+          "can't",
+          "wouldn't"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Choose the past deduction.",
+        "options": [
+          "She must have left.",
+          "She must leaving.",
+          "She must left.",
+          "She must to leave."
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g24",
+    "day": 24,
+    "level": "B2",
+    "title": "Noun Clauses",
+    "summary": "Use clauses as subjects or objects to express complex ideas.",
+    "plainExplanation": "A noun clause is an entire clause that functions like a single noun in a sentence — as a subject, object, or complement. They usually begin with that, what, who, whether, if, or a wh-word, and let you embed a full idea inside another sentence.",
+    "steps": [
+      "Find the clause that is acting as the subject, object, or complement of the main verb.",
+      "Check that it starts with a noun-clause marker: that, what, whether, if, why, how, who, etc.",
+      "Use normal statement word order inside the noun clause, even if it looks like a question (I don't know what he wants, not I don't know what does he want).",
+      "'That' can often be omitted when the noun clause is the object (I think (that) she's right).",
+      "Use 'whether' (not 'if') when the noun clause follows a preposition or starts a sentence (The question of whether we should go...)."
+    ],
+    "rule": "A noun clause can begin with that, whether, if, what, why, how and other words depending on meaning.",
+    "structure": "Main verb + noun clause",
+    "examples": [
+      "I know that she is honest.",
+      "What he said surprised me.",
+      "We do not know whether they will agree."
+    ],
+    "quiz": [
+      {
+        "q": "Which sentence contains a noun clause?",
+        "options": [
+          "I know that she is honest.",
+          "She is honest and kind.",
+          "The honest student smiled.",
+          "She smiled honestly."
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Complete: 'We don't know ___ he will come.'",
+        "options": [
+          "whether",
+          "because",
+          "although",
+          "than"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g25",
+    "day": 25,
+    "level": "B2",
+    "title": "Adverb Clauses",
+    "summary": "Use clauses to express time, reason, contrast and condition.",
+    "plainExplanation": "Adverb clauses are dependent clauses that function like an adverb, describing time, reason, condition, contrast, purpose, or manner for the main clause. They're introduced by subordinating conjunctions and add precise context to when, why, or how something happens.",
+    "steps": [
+      "Identify what kind of extra information you want to add: time, reason, condition, contrast, or purpose.",
+      "Choose the matching conjunction: when/while/before/after (time), because/since/as (reason), if/unless (condition), although/whereas (contrast), so that/in order that (purpose).",
+      "Place the adverb clause before or after the main clause, adding a comma only if it comes first.",
+      "Make sure the adverb clause has its own subject and verb, but still depends on the main clause to be complete.",
+      "Vary conjunctions to avoid overusing 'because' or 'when' — precise choice improves clarity."
+    ],
+    "rule": "Adverb clauses modify the main clause and often begin with subordinators such as when, because, although, if and while.",
+    "structure": "Subordinator + subject + verb, main clause",
+    "examples": [
+      "When the lesson ends, I will practise.",
+      "Because I was tired, I went home.",
+      "Although it was difficult, she continued."
+    ],
+    "quiz": [
+      {
+        "q": "Which connector introduces a reason?",
+        "options": [
+          "because",
+          "although",
+          "while",
+          "unless"
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Choose the correct sentence.",
+        "options": [
+          "When I arrive, I will call you.",
+          "When I will arrive, I call you.",
+          "When I arriving, I will call you.",
+          "When arrive I, I will call you."
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g26",
+    "day": 26,
+    "level": "C1",
+    "title": "Inversion for Emphasis",
+    "summary": "Use controlled inversion in formal and emphatic structures.",
+    "plainExplanation": "Inversion swaps the normal subject-verb order for emphasis or formality, often after negative or limiting adverbials placed at the front of a sentence (never, rarely, not only, no sooner). It's a hallmark of advanced, formal, or literary English.",
+    "steps": [
+      "Identify the negative or limiting adverbial you want to emphasise by moving it to the front (never, rarely, seldom, not only, little).",
+      "Move that word or phrase to the start of the sentence.",
+      "Invert the subject and auxiliary verb, as in a question (Never have I seen such a mess).",
+      "Add an auxiliary (do/does/did) if the main clause has no auxiliary verb already (Rarely does she complain).",
+      "Reserve inversion for formal or emphatic writing/speech — it can sound unnatural in everyday casual conversation."
+    ],
+    "rule": "After negative or limiting expressions such as never, rarely and only then, auxiliary inversion can add emphasis.",
+    "structure": "Negative/limiting expression + auxiliary + subject + verb",
+    "examples": [
+      "Never have I seen such a result.",
+      "Rarely does he make this mistake.",
+      "Only then did she understand the problem."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct emphatic sentence.",
+        "options": [
+          "Never I have seen this.",
+          "Never have I seen this.",
+          "Never seen I have this.",
+          "Never did I have seen this."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Which structure follows 'Rarely' in formal inversion?",
+        "options": [
+          "does he",
+          "he does",
+          "he do",
+          "did he does"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g27",
+    "day": 27,
+    "level": "C1",
+    "title": "Participle Clauses",
+    "summary": "Compress related information into concise academic sentences.",
+    "plainExplanation": "Participle clauses use an -ing (present participle) or -ed/-en (past participle) form instead of a full clause with a subject and conjunction. They make sentences more concise and are common in formal and written English.",
+    "steps": [
+      "Find two clauses that share the same subject and could be combined.",
+      "Use an -ing participle clause for an active, ongoing action (Walking home, she saw a fox = As she walked home...).",
+      "Use an -ed/-en participle clause for a passive meaning (Written in 1990, the book became a classic = The book, which was written...).",
+      "Make sure the implied subject of the participle clause is the same as the subject of the main clause, to avoid a 'dangling participle'.",
+      "Use participle clauses to replace clauses of time, reason, or result for a more concise, formal style."
+    ],
+    "rule": "Present participles can express simultaneous or related actions; past participles can create reduced passive clauses when the relationship is clear.",
+    "structure": "V-ing/V-ed phrase + main clause",
+    "examples": [
+      "Having finished the essay, she submitted it.",
+      "Based on the evidence, the report recommends change.",
+      "Working carefully, he avoided errors."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct reduced form for 'After she finished the essay, she submitted it.'",
+        "options": [
+          "Having finished the essay, she submitted it.",
+          "Having finish the essay, she submitted it.",
+          "Finished having the essay, she submitted it.",
+          "She having finished the essay submitted it."
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Which participle commonly creates a reduced passive phrase?",
+        "options": [
+          "based",
+          "bases",
+          "basingly",
+          "base"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g28",
+    "day": 28,
+    "level": "C1",
+    "title": "Cleft Sentences and Focus",
+    "summary": "Highlight a specific part of a sentence for emphasis.",
+    "plainExplanation": "Cleft sentences restructure a sentence to put special emphasis on one particular piece of information, usually using structures like 'It is... that...' or 'What... is...'. They're a powerful tool for controlling what the listener focuses on.",
+    "steps": [
+      "Decide exactly which piece of information you want to highlight.",
+      "For an it-cleft, use 'It is/was + [the emphasised part] + that/who + [the rest of the sentence]' (It was Maria who found the solution).",
+      "For a wh-cleft, use 'What + [rest of sentence] + is/was + [the emphasised part]' (What we need is more time).",
+      "Keep the verb tense in the cleft consistent with the original sentence's meaning.",
+      "Use clefts sparingly for genuine emphasis — overusing them makes writing feel repetitive or overly dramatic."
+    ],
+    "rule": "Cleft structures such as It is/was X that/who... and What... is... reorganize information to focus attention.",
+    "structure": "It is/was + focus + that/who + clause",
+    "examples": [
+      "It was the final paragraph that impressed the examiner.",
+      "What I need is more practice.",
+      "It is accuracy that matters most here."
+    ],
+    "quiz": [
+      {
+        "q": "Choose the correct cleft structure.",
+        "options": [
+          "It was accuracy that mattered.",
+          "It accuracy was that mattered.",
+          "Accuracy it was mattered.",
+          "It was that accuracy mattered."
+        ],
+        "answer": 0
+      },
+      {
+        "q": "Which phrase can focus on a needed thing?",
+        "options": [
+          "What I need is...",
+          "What need I is...",
+          "I what need is...",
+          "Need what I is..."
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g29",
+    "day": 29,
+    "level": "C1",
+    "title": "Advanced Punctuation and Sentence Boundaries",
+    "summary": "Control commas, semicolons and sentence boundaries in formal writing.",
+    "plainExplanation": "Advanced punctuation — semicolons, colons, dashes, and correctly placed commas — controls how ideas connect and where one sentence boundary ends and another begins. Misusing these marks is one of the most common causes of run-on sentences and comma splices in advanced writing.",
+    "steps": [
+      "Use a semicolon to join two closely related independent clauses without a conjunction (The exam was hard; everyone struggled).",
+      "Use a colon to introduce a list, explanation, or elaboration after a complete independent clause (She had one goal: to pass).",
+      "Use an em dash for an abrupt break or emphatic aside — sparingly, in more informal or emphatic writing.",
+      "Avoid comma splices — never join two independent clauses with only a comma; use a semicolon, a conjunction, or a full stop instead.",
+      "Check every sentence boundary: could it stand alone as a complete sentence? If two complete ideas are joined only by a comma, fix the punctuation."
+    ],
+    "rule": "Use a semicolon to join closely related independent clauses; use commas for appropriate introductory or non-essential elements. Avoid comma splices.",
+    "structure": "Independent clause; independent clause",
+    "examples": [
+      "The evidence was limited; the conclusion remained cautious.",
+      "However, the results were consistent.",
+      "The report, which was published in June, received attention."
+    ],
+    "quiz": [
+      {
+        "q": "Which sentence correctly joins two independent clauses?",
+        "options": [
+          "The evidence was limited, the conclusion was cautious.",
+          "The evidence was limited; the conclusion was cautious.",
+          "The evidence was limited the conclusion was cautious.",
+          "The evidence, was limited; the conclusion was cautious."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Which punctuation can join two closely related independent clauses?",
+        "options": [
+          "semicolon",
+          "apostrophe",
+          "hyphen only",
+          "quotation mark"
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "id": "g30",
+    "day": 30,
+    "level": "C1",
+    "title": "Grammar for Academic Writing",
+    "summary": "Combine accurate grammar with formal control, cohesion and sentence variety.",
+    "plainExplanation": "Academic writing favours precise, objective, and formal grammar choices: passive voice where appropriate, nominalisation (turning verbs into nouns), hedging language, and avoidance of contractions or casual phrasing. This lesson focuses on the grammatical habits that make writing sound scholarly.",
+    "steps": [
+      "Replace contractions with full forms (don't → do not, it's → it is).",
+      "Use the passive voice when the process or result matters more than who performed it (The data was analysed...).",
+      "Turn action verbs into abstract nouns where it suits formal tone (analyse → analysis, decide → decision).",
+      "Hedge claims with cautious language instead of blunt assertions (may suggest, appears to indicate, tends to).",
+      "Avoid first-person opinion words like 'I think' in favour of evidence-based, impersonal phrasing (The findings suggest...)."
+    ],
+    "rule": "Strong academic writing balances accuracy with purposeful complexity. Use precise tense, controlled passive voice, logical subordination, cautious modality and varied sentence structures.",
+    "structure": "Claim + explanation + evidence/example + controlled complex structure",
+    "examples": [
+      "The findings suggest that targeted practice can improve accuracy.",
+      "Although the sample was limited, the results were broadly consistent.",
+      "It is therefore important to interpret the evidence cautiously."
+    ],
+    "quiz": [
+      {
+        "q": "Which sentence shows cautious academic language?",
+        "options": [
+          "This proves everything.",
+          "This may suggest that the method is effective.",
+          "This definitely proves all cases.",
+          "This always proves the theory."
+        ],
+        "answer": 1
+      },
+      {
+        "q": "Which quality is most important in advanced academic grammar?",
+        "options": [
+          "Complexity at any cost",
+          "Accuracy and purposeful control",
+          "Long sentences only",
+          "Rare vocabulary in every sentence"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+]

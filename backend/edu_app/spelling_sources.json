@@ -1,0 +1,11 @@
+{
+  "updated": "2026-08-20",
+  "description": "Internet-researched Myanmar spelling references used to expand the conservative correction database.",
+  "sources": [
+    {"name":"Myanmar Computer Federation — Myanmar Spelling Book","url":"https://mcf.org.mm/myanmar-unicode/1876.html"},
+    {"name":"kanaung/wordlists — Myanmar spelling book word list","url":"https://github.com/kanaung/wordlists"},
+    {"name":"Myanmar Proverbs — common spelling errors","url":"https://www.mmproverbs.pro/"},
+    {"name":"mySpellCorrect — Burmese statistical spelling correction","url":"https://github.com/thuraaungjune/mySpellCorrect"}
+  ],
+  "policy": "Only high-confidence corrections are auto-underlined/replaced; unknown or context-dependent words are not automatically marked wrong."
+}

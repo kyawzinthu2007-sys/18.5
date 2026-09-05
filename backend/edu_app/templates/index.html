@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="{{ initial_language|default('en') }}" data-initial-language="{{ initial_language|default('en') }}">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TSO Edu — Writing Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/edu/static/style.css?v=20260903-mobile-nav-fix-v3">
+<link rel="stylesheet" href="/edu/static/brainstorm.css?v=20260831-brainstorm-v1">
+<link rel="stylesheet" href="/edu/static/grammar.css?v=20260904-grammar-v5">
+<link rel="stylesheet" href="/edu/static/vocabulary.css?v=20260905-vocab-v1">
+<link rel="icon" href="/edu/edu-logo.png">
+</head>
+<body>
+<header class="edu-header">
+  <div class="edu-header-row">
+    <div class="brand">
+      <span class="mark"><img src="/edu/edu-logo.png" alt="TSO Edu logo"></span>
+      <div class="brand-text"><b>TSO Edu</b><small>Writing Coach · Offline &amp; private</small></div>
+    </div>
+
+    <!-- Desktop primary nav: scrolls to the same sections as the mobile
+         quick-nav bar further down the page, reusing the existing
+         data-scroll-target + coach-focus mechanism in app.js. -->
+    <nav class="edu-primary-nav" aria-label="Section navigation">
+      <button type="button" class="nav-grammar-btn" data-scroll-target="grammarAcademy" data-i18n="navGrammar">📚 Grammar Academy</button>
+      <button type="button" data-scroll-target="vocabularyCoach">🧠 Vocabulary</button>
+      <button type="button" data-scroll-target="generate-card" data-i18n="navWrite">Write</button>
+      <button type="button" data-scroll-target="analysis-editor" data-i18n="navAnalyze">Analyze</button>
+      <button type="button" data-scroll-target="ideaMapCanvas" data-i18n="navIdeas">Ideas</button>
+      <button type="button" data-scroll-target="naturalWritingCard" data-i18n="navCoach">Coach</button>
+      <button type="button" data-scroll-target="brainstormPanel" data-i18n="navBrainstorm">Brainstorm</button>
+      <button type="button" data-scroll-target="coachLayerPanel" data-i18n="navProgress">Progress</button>
+    </nav>
+
+    <!-- Secondary controls: same elements as before (same ids, so
+         app.js's existing getElementById wiring needs no changes).
+         The language switch is intentionally NOT inside this cluster —
+         it stays in the header row at all times (see edu-language-switch
+         below) so it's never hidden behind the ☰ menu on phones. Only
+         ranking/status/back-link collapse into the sheet under 900px. -->
+    <div class="edu-header-secondary" id="eduHeaderSecondary">
+      <button type="button" id="rankingTabBtn" class="ranking-tab-btn" aria-pressed="false">🏆 Ranking</button>
+      <div class="status" id="status"><span class="dot"></span> Database ready</div>
+      <a href="/" id="backToJobBoard" class="back-to-jobboard">← Back to Job Board</a>
+    </div>
+
+    <!-- Language switch: always visible in the header row, on every
+         screen width, so it's reachable with a single tap on phones
+         instead of being buried inside the ☰ menu. -->
+    <div class="edu-language-switch" id="eduLanguageSwitch" role="group" aria-label="Essay language">
+      <span class="language-label" id="languageLabel">Language</span>
+      <button type="button" class="language-btn" id="langEnglish" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" class="language-btn" id="langMyanmar" data-lang="my" aria-pressed="false">မြန်မာ</button>
+    </div>
+
+    <button type="button" id="eduHeaderMenuBtn" class="edu-header-menu-btn" aria-haspopup="true" aria-expanded="false" aria-controls="eduHeaderSheet" aria-label="Open menu">☰</button>
+  </div>
+
+
+  <!-- Mobile-only subheader: page title, shown only under the same
+       760px breakpoint the rest of the mobile chrome uses. -->
+  <div class="edu-header-sub">
+    <span>Writing Studio</span>
+  </div>
+</header>
+
+<!-- Mobile menu sheet: on screens ≥760px this stays hidden (the real
+     controls above are visible inline instead). Below 760px it holds
+     the same secondary controls, moved here visually via CSS so the
+     header's top row never needs to cram them all in. -->
+<div class="edu-header-sheet-backdrop" id="eduHeaderSheetBackdrop" hidden></div>
+<div class="edu-header-sheet" id="eduHeaderSheet" hidden>
+  <div class="edu-header-sheet-head">
+    <b>Menu</b>
+    <button type="button" id="eduHeaderSheetClose" aria-label="Close menu">×</button>
+  </div>
+  <!-- Section jump links: only relevant while the sheet is the sole way
+       to reach a section (i.e. once .edu-primary-nav is hidden by CSS).
+       Separate buttons from .edu-primary-nav (kept intact there for its
+       own active-state highlighting) but same data-scroll-target
+       mechanism, so the generic [data-scroll-target] binder in app.js
+       picks these up automatically with no extra wiring. -->
+  <nav class="edu-header-sheet-nav" aria-label="Section navigation">
+    <button type="button" class="nav-grammar-btn" data-scroll-target="grammarAcademy" data-i18n="navGrammar">📚 Grammar Academy</button>
+    <button type="button" data-scroll-target="generate-card" data-i18n="navWrite">Write</button>
+    <button type="button" data-scroll-target="analysis-editor" data-i18n="navAnalyze">Analyze</button>
+    <button type="button" data-scroll-target="ideaMapCanvas" data-i18n="navIdeas">Ideas</button>
+    <button type="button" data-scroll-target="naturalWritingCard" data-i18n="navCoach">Coach</button>
+    <button type="button" data-scroll-target="brainstormPanel" data-i18n="navBrainstorm">Brainstorm</button>
+    <button type="button" data-scroll-target="coachLayerPanel" data-i18n="navProgress">Progress</button>
+  </nav>
+  <div class="edu-header-sheet-body" id="eduHeaderSheetBody"><!-- secondary controls moved here by JS on small screens --></div>
+</div>
+
+<main>
+  <section class="panel ranking-panel" id="rankingSection" hidden>
+    <div class="panel-title">
+      <h3>🏆 Most Active Users</h3>
+      <span>Ranked by how many times each tool has been used</span>
+    </div>
+    <div class="ranking-tabs" id="rankingTabs" role="group" aria-label="Ranking category">
+      <button type="button" class="ranking-tab active" data-feature="overall">Overall</button>
+      <button type="button" class="ranking-tab" data-feature="text_analysis">Analyze essay</button>
+      <button type="button" class="ranking-tab" data-feature="essay_generation">Generate essay</button>
+    </div>
+    <p id="rankingResetNotice" class="ranking-reset-notice"></p>
+    <div id="rankingRewardsWhy" class="ranking-rewards-why"></div>
+    <div id="rankingList" class="ranking-list empty">Loading ranking…</div>
+  </section>
+
+  <div id="eduMainContent">
+  <section class="grammar-academy" id="grammarAcademy">
+    <div class="grammar-head"><div><span class="eyebrow">TSO EDU GRAMMAR ACADEMY</span><h2>Learn Grammar Step by Step</h2><p>Read the textbook free, practise basic questions free, then use Credits for AI-powered practice and advanced coaching.</p></div><div class="grammar-credit">Balance: <b id="grammarBalance">—</b></div></div>
+    <div class="grammar-cert-announce" id="grammarCertAnnounce">🏆 <b>Earn your Certificate of Completion:</b> finish every lesson, then pass the Final Mastery Exam with a minimum score of <b id="grammarCertAnnounceThreshold">85%</b> to unlock your certificate.</div>
+    <div class="grammar-progress"><span id="grammarProgressBar"></span></div>
+    <div class="grammar-layout"><aside class="grammar-sidebar" id="grammarDays"></aside><article class="grammar-book" id="grammarContent"></article></div>
+    <div class="grammar-section grammar-exam-section" id="grammarExamSection" hidden></div>
+
+    </section>
+
+    <section class="vocab-panel" id="vocabularyCoach">
+      <div class="vocab-head"><div><span class="eyebrow">TSO EDU · VOCABULARY COACH</span><h2>🧠 Build vocabulary that stays</h2><p>Learn useful CEFR and academic words with meanings, Myanmar translations, examples, synonyms, antonyms and spaced repetition.</p><span class="hint" id="vocabSignIn">Progress is saved when you sign in.</span></div><div class="vocab-stats" id="vocabStats"></div></div>
+      <div class="vocab-tabs"><button class="active" id="vocabStart">▶ Daily Review</button><button id="vocabBrowse">🔎 Browse Words</button></div>
+      <div class="vocab-session" id="vocabSession"></div>
+      <div class="vocab-toolbar"><input id="vocabSearch" placeholder="Search word, meaning, or Myanmar…"><select id="vocabLevel"><option value="all">All CEFR levels</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option></select></div>
+      <div class="vocab-grid" id="vocabGrid"></div>
+    </section>
+
+  <section class="edu-tool-dock" aria-label="TSO Edu tools">
+    <div class="tool-dock-head">
+      <div>
+        <span class="eyebrow">TSO EDU WORKSPACE</span>
+        <h2>Choose the right tool for your writing</h2>
+        <p>These tools do different jobs. Pick one before you start.</p>
+      </div>
+      <span class="tool-live-pill"><span></span> Fast local workspace</span>
+    </div>
+    <div class="edu-tool-grid">
+      <button type="button" class="edu-tool-button tool-analyze" data-scroll-target="analysis-editor">
+        <span class="tool-icon">🔎</span><span class="tool-copy"><strong>Analyze Writing</strong><small>Check your existing essay: grammar, vocabulary, coherence, relevance and level.</small></span><span class="tool-arrow">→</span>
+      </button>
+      <button type="button" class="edu-tool-button tool-generate" data-scroll-target="generate-card">
+        <span class="tool-icon">✨</span><span class="tool-copy"><strong>Generate Essay</strong><small>Create a new model essay from a topic, level and length. This is not an analysis.</small></span><span class="tool-arrow">→</span>
+      </button>
+      <button type="button" class="edu-tool-button tool-coach" data-scroll-target="naturalWritingCard">
+        <span class="tool-icon">✍️</span><span class="tool-copy"><strong>Natural Writing Coach</strong><small>Improve your own draft's naturalness and student voice. It does not create a new essay.</small></span><span class="tool-arrow">→</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="hero premium-hero">
+    <div class="hero-copy">
+      <span class="eyebrow" data-i18n="eyebrow">RULE-BASED · CEFR-CALIBRATED</span>
+      <h1 data-i18n="heroTitle">Write it.<br>Measure it. <em>Level up.</em></h1>
+      <p data-i18n="heroDesc">Deterministic language checking against an offline reference database — automatic essay-type detection, a CEFR-style level estimate, and click-to-fix corrections. No cloud, no model download.</p>
+    </div>
+    <div class="hero-ai-core" aria-hidden="true">
+      <div class="ai-orbit ai-orbit-a"></div><div class="ai-orbit ai-orbit-b"></div>
+      <div class="ai-core-glow"></div><div class="ai-core-badge">✦</div>
+      <span class="ai-particle p1">✎</span><span class="ai-particle p2">✦</span><span class="ai-particle p3">Aa</span>
+      <div class="ai-core-caption"><b>TSO AI</b><small>Writing Studio</small></div>
+    </div>
+    <div class="hero-ruler" aria-hidden="true">
+      <div class="ruler-track">
+        <div class="ruler-marker" id="heroMarker" style="left:0%"><span id="heroMarkerLabel">—</span></div>
+      </div>
+      <div class="ruler-ticks">
+        <span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-strip">
+    <div class="feature-card">
+      <span class="feature-icon">⚡</span>
+      <h3>No prompt crafting</h3>
+      <p>The evaluation framework is already built into the interface — open the editor and analyze, instead of writing a multi-step prompt to get detailed feedback.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🧩</span>
+      <h3>Multi-step audit, not one pass</h3>
+      <p>Thesis strength, evidence relevance and logic continuity are checked in separate, isolated passes — not one single-shot generation that can gloss over weak spots.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🗂️</span>
+      <h3>A workspace, not a wall of text</h3>
+      <p>A synchronized 3-column layout maps the audit, the underlined feedback, and micro-edits directly to the line in your essay they refer to.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">🎯</span>
+      <h3>Calibrated to real rubrics</h3>
+      <p>Scores are predicted against the standard you choose — AP Literature, IELTS Academic, or a generic syllabus rubric — instead of vague praise.</p>
+    </div>
+    <div class="feature-card">
+      <span class="feature-icon">✍️</span>
+      <h3>Micro-edits, not ghostwriting</h3>
+      <p>You get flagged fallacies and click-to-apply line edits, never a full rewrite — so the voice and authorship stay yours.</p>
+    </div>
+  </section>
+
+  <section class="editor-card generate-card" id="generate-card">
+    <div class="edu-page-mode-switch mode-essay" id="eduPageModeSwitch" role="group" aria-label="Writing mode">
+      <span class="language-label" id="modeLabel">Mode</span>
+      <button type="button" class="language-btn mode-essay active" id="modeEssay" data-mode="essay" aria-pressed="true">Essay</button>
+      <button type="button" class="language-btn mode-debate" id="modeDebate" data-mode="debate" aria-pressed="false">Debate</button>
+    </div>
+    <div class="toolbar">
+      <label class="title-input" data-i18n-label="titleTopic">Essay title/topic
+        <input id="genTitle" type="text" placeholder="e.g. The impact of technology on education" data-i18n-placeholder="topicPlaceholder" autocomplete="off">
+      </label>
+      <label class="rubric-input" id="topicBankCategoryWrap" style="display:none">အမျိုးအစား
+        <select id="topicBankCategory">
+          <option value="">အားလုံး</option>
+        </select>
+      </label>
+      <label class="rubric-input" id="topicBankDifficultyWrap" style="display:none">အဆင့်
+        <select id="topicBankDifficulty">
+          <option value="">အားလုံး</option>
+          <option value="beginner">အခြေခံ</option>
+          <option value="intermediate">အလယ်အလတ်</option>
+          <option value="advanced">အဆင့်မြင့်</option>
+        </select>
+      </label>
+      <button type="button" id="topicBankPick" style="display:none">🎲 ခေါင်းစဉ်ရွေးမည်</button>
+      <label class="rubric-input" data-i18n-label="essayType">Essay type
+        <select id="genEssayType">
+          <option value="opinion">Opinion essay</option>
+          <option value="discussion">Discussion (both views) essay</option>
+          <option value="advantages_disadvantages">Advantages / disadvantages essay</option>
+          <option value="problem_solution">Problem / solution essay</option>
+          <option value="two_part">Two-part question essay</option>
+          <option value="cause_effect">Cause and effect essay</option>
+          <option value="positive_negative">Positive or negative development essay</option>
+        </select>
+      </label>
+      <label class="rubric-input" id="debateStanceWrap" style="display:none">ရပ်တည်ချက်
+        <select id="debateStance">
+          <option value="support">ထောက်ခံ</option>
+          <option value="oppose">ကန့်ကွက်</option>
+        </select>
+      </label>
+      <label class="rubric-input" data-i18n-label="level">Level
+        <select id="genLevel">
+          <option value="a1">CEFR A1 (Beginner)</option>
+          <option value="a2">CEFR A2 (Elementary)</option>
+          <option value="b1">CEFR B1 (Intermediate) · IELTS Band 5</option>
+          <option value="b2" selected>CEFR B2 (Upper-Intermediate) · IELTS Band 6–6.5</option>
+          <option value="c1">CEFR C1 (Advanced) · IELTS Band 7–7.5</option>
+          <option value="c2">CEFR C2 (Proficient) · IELTS Band 8–9</option>
+        </select>
+      </label>
+      <label class="rubric-input" data-i18n-label="length">Length
+        <select id="genWords">
+          <option value="180">~180 words</option>
+          <option value="250" selected>~250 words</option>
+          <option value="350">~350 words</option>
+          <option value="450">~450 words</option>
+        </select>
+      </label>
+      <button id="generateEssayBtn" class="primary">✨ Generate essay (3 TSO Credits)</button><a href="/?credit=1" class="credit-cta generate-credit-cta">💳 Need Credit?</a>
+      <span class="hint" id="generateHint">Writes a full model essay from your title, type and level, then loads it into the editor below.</span>
+    </div>
+  </section>
+
+  <section class="editor-card generated-editor-card" id="generatedEditorCard">
+    <div class="toolbar generated-toolbar">
+      <strong id="generatedEditorTitle">Generated essay</strong>
+      <span class="hint" id="generatedEditorHint">Generated text is shown here separately from the analysis editor.</span>
+      <button type="button" id="copyGeneratedBtn">Copy</button>
+      <button type="button" id="loadGeneratedBtn" class="primary">Use in writing editor</button>
+      <button type="button" id="clearGeneratedBtn">Clear</button>
+    </div>
+    <div class="originality-notice" id="originalityNotice" hidden>
+      <div class="originality-notice-head">
+        <span class="originality-badge" id="originalityBadge">✓ Clear</span>
+        <span class="originality-score" id="originalityScore">0% match</span>
+      </div>
+      <p class="originality-message" id="originalityMessage"></p>
+      <ul class="originality-matches" id="originalityMatches"></ul>
+      <p class="originality-footnote">Offline similarity screen against the TSO Edu reference database — not an internet-wide plagiarism guarantee. Generated essays are built from a template phrase bank, so some overlap with other generated essays on similar topics is expected; treat this as a starting draft, not a final submission.</p>
+    </div>
+    <div class="generated-space">
+      <textarea id="generatedEditor" spellcheck="true" placeholder="Generated English or Myanmar essay will appear here…"></textarea>
+    </div>
+  </section>
+
+  <section class="editor-card" id="analysis-editor">
+    <div class="toolbar">
+      <button id="newBtn" data-i18n="newBtn">＋ New</button><button id="clearBtn" data-i18n="clearBtn">Clear</button>
+      <label class="title-input" data-i18n-label="titleTopic">Essay title/topic
+        <input id="essayTitle" type="text" placeholder="e.g. The impact of technology on education" data-i18n-placeholder="topicPlaceholder" autocomplete="off">
+      </label>
+      <label class="rubric-input" data-i18n-label="grading">Grading standard
+        <select id="rubricSelect">
+          <option value="general">General CEFR band</option>
+          <option value="ap_lit">AP Literature &amp; Composition (1–9)</option>
+          <option value="ielts_academic">IELTS Academic Writing Task 2 (Band 0–9)</option>
+          <option value="custom">Custom syllabus rubric (A–F)</option>
+        </select>
+      </label>
+      <button id="analyzeBtn" class="primary">Analyze writing (2 TSO Credits)</button>
+      <span class="hint" id="coinBalanceHint"></span><a href="/?credit=1" class="credit-cta" id="creditCta">💳 Get Credit</a>
+      <span class="hint" id="detectedTypeHint">Essay type is detected automatically from your writing.</span>
+    </div>
+    <div class="editor-wrap"><div id="highlightLayer" aria-hidden="true"></div><textarea id="editor" spellcheck="true" placeholder="Paste or write your paragraph here…" data-i18n-placeholder="editorPlaceholder"></textarea></div>
+    <div class="legend"><span><i class="u grammar"></i> Grammar</span><span><i class="u vocabulary"></i> Vocabulary</span><span><i class="u accuracy"></i> Accuracy</span><span><i class="u coherence"></i> Coherence</span><span class="legend-hint">Click Analyze to refresh highlights · Click a correction or repeated word to improve it</span></div>
+    <div class="bottom"><span id="liveStats">0 words · 0 sentences · 0 characters</span><span>Local analysis engine</span></div>
+  </section>
+
+  <section class="grid audit-grid">
+    <div class="panel"><div class="panel-title"><h3 data-i18n="audit">Multi-step audit</h3><span>Thesis · evidence · logic · structure</span></div><div id="auditPipeline" class="audit-pipeline empty">Enter an essay title/topic and analyze your writing.</div></div>
+    <div class="panel"><div class="panel-title"><h3 data-i18n="underlined">Underlined feedback</h3><span>Linked to the line it flags</span></div><div id="issues" class="list empty">No analysis yet.</div></div>
+    <div class="panel"><div class="panel-title"><h3 data-i18n="microEdits">Micro-edits, not rewrites</h3><span>Good · Better · Best — click to apply</span></div><div id="suggestions" class="list empty">Suggestions will appear here.</div></div>
+  </section>
+
+  <section class="grid lower">
+    <div class="panel"><div class="panel-title"><h3 data-i18n="paragraphFeedback">Paragraph feedback</h3><span>Writing coaching</span></div><div id="paragraphFeedback" class="feedback empty">Write a paragraph and analyze it to receive feedback.</div></div>
+    <div class="panel"><div class="panel-title"><h3>Linking words</h3><span id="linkLevel">Target level</span></div><div id="linkingWords" class="links empty">Examples will appear here.</div><div class="tipbox">Use a linker only when it accurately expresses the relationship between ideas.</div></div>
+  </section>
+
+  <section class="panel stats"><div class="panel-title"><h3 data-i18n="writingStats">Writing statistics</h3><span>Live analysis</span></div><div id="stats" class="statgrid"></div></section>
+
+  <section class="panel idea-map-panel">
+    <div class="panel-title">
+      <h3>Idea Map</h3>
+      <span>Architecture sketch of your essay's structure · Free · Offline · Auto-generated on Analyze or Generate Essay</span>
+    </div>
+    <div class="idea-map-toolbar">
+      <button id="ideaMapBtn" class="primary">Refresh idea map</button>
+      <label class="sketch-toggle"><input type="checkbox" id="sketchToggle" checked> Include artistic sketch layer</label>
+      <button id="ideaMapDownloadSvg" class="secondary" disabled>Download SVG</button>
+      <button id="ideaMapDownloadJpg" class="secondary" disabled>Save as JPEG</button>
+      <span class="hint" id="ideaMapHint">Generated automatically when you click Analyze or Generate Essay. No AI call, no coins.</span>
+    </div>
+    <div id="ideaMapCanvas" class="idea-map-canvas empty">Write an essay, then click Analyze or Generate Essay — the idea map appears here automatically.</div>
+  </section>
+
+  <section class="dashboard">
+    <div class="score-main">
+      <div class="level-chip" id="levelChip">A1</div>
+      <div class="dial" id="dial"><svg viewBox="0 0 120 120"><circle class="dial-track" cx="60" cy="60" r="52"></circle><circle class="dial-fill" id="dialFill" cx="60" cy="60" r="52"></circle></svg><span id="overall">0</span><small>/100</small></div>
+      <h2 data-i18n="currentLevel">Current writing level</h2>
+      <p id="levelText">Analyze your writing to estimate your CEFR-style level.</p>
+      <div class="rubric-score empty" id="rubricScore">Choose a grading standard above and analyze to see a calibrated score prediction.</div>
+    </div>
+    <div class="scores" id="scores"></div>
+    <div class="method-note"><b>How the level is estimated</b><p>Grammar accuracy 20% · grammar complexity 15% · vocabulary range 15% · vocabulary precision 10% · cohesion 10% · coherence 10% · task relevance 10% · sentence variety 5% · development 5%. A core-skill ceiling prevents advanced vocabulary from hiding weak grammar or accuracy.</p></div>
+  </section>
+
+  <section class="coach-launch-card">
+    <div><span class="eyebrow">STUDENT VOICE · NOT ESSAY GENERATION</span><h2>Want to make your draft sound more natural?</h2><p>Use <strong>Natural Writing Coach</strong> on the essay you already wrote. It gives targeted suggestions instead of replacing your whole essay.</p></div>
+    <button type="button" class="coach-launch-button" data-scroll-target="naturalWritingCard">✍️ Open Natural Writing Coach <span>→</span></button>
+  </section>
+
+  <section class="editor-card natural-writing-card" id="naturalWritingCard">
+    <div class="natural-writing-head">
+      <div>
+        <span class="eyebrow">STUDENT VOICE · LOCAL ENGINE</span>
+        <h2>✍️ Improve your draft naturally</h2>
+        <p>Different from <strong>Analyze</strong> and <strong>Generate Essay</strong>: this tool improves <em>your existing draft</em> while keeping your ideas and student voice.</p>
+      </div>
+      <div class="natural-writing-badge">🔒 No external AI API</div>
+    </div>
+    <div class="tool-explain-grid">
+      <div><b>🔎 Analyze</b><span>Finds problems and scores your writing.</span></div>
+      <div><b>✨ Generate Essay</b><span>Creates a new model essay from a topic.</span></div>
+      <div class="active"><b>✍️ Natural Writing Coach</b><span>Improves a draft you already wrote.</span></div>
+    </div>
+    <div class="natural-writing-controls">
+      <label>Student level
+        <select id="naturalLevel"><option>A2</option><option>B1</option><option selected>B2</option><option>C1</option></select>
+      </label>
+      <label>Style
+        <select id="naturalStyle"><option value="student" selected>Natural student</option><option value="academic">Clear academic</option><option value="simple">Simple &amp; clear</option></select>
+      </label>
+      <button type="button" id="naturalWritingBtn" class="primary">✍️ Improve my draft (2 TSO Credits)</button>
+    </div>
+    <p class="natural-writing-hint" id="naturalWritingHint">Paste your own draft in the writing editor above, then use this tool. Every suggested change should be reviewed by you.</p>
+    <div class="natural-writing-result" id="naturalWritingResult" hidden>
+      <div class="natural-compare-toggle" id="naturalCompareToggle" role="group" aria-label="View">
+        <button type="button" class="active" data-view="original">Original</button>
+        <button type="button" data-view="improved">Improved</button>
+        <button type="button" data-view="compare">Compare</button>
+      </div>
+      <div class="natural-result-col" data-pane="original"><h3>Before</h3><div id="naturalBefore"></div></div>
+      <div class="natural-result-arrow" aria-hidden="true">→</div>
+      <div class="natural-result-col improved" data-pane="improved"><h3>Suggested revision</h3><div id="naturalAfter"></div></div>
+      <div class="natural-changes"><b id="naturalChangeCount">0 changes</b><ul id="naturalChangeList"></ul></div>
+    </div>
+  </section>
+
+  <section class="progress-panel">
+    <div><span class="eyebrow" data-i18n="nextTarget">NEXT TARGET</span><h3 data-i18n="stretch">Stretch toward <strong id="targetLevel">B2</strong></h3><p id="targetText">Suggestions are intentionally above your current estimated level.</p></div>
+    <div class="path"><span>A1</span><b>→</b><span>A2</span><b>→</b><span>B1</span><b>→</b><span>B2</span><b>→</b><span>C1</span><b>→</b><span>C2</span></div>
+  </section>
+
+  <section class="panel brainstorm-panel" id="brainstormPanel">
+    <div id="brainstormRoot" class="bs-root">
+      <!-- AI Brainstorm — populated entirely by /edu/static/brainstorm.js -->
+      <div class="bs-bg" aria-hidden="true">
+        <div class="bs-glow bs-glow-a"></div>
+        <div class="bs-glow bs-glow-b"></div>
+        <div class="bs-glow bs-glow-c"></div>
+        <canvas class="bs-grid" id="bsGridCanvas"></canvas>
+        <canvas class="bs-particles" id="bsParticleCanvas"></canvas>
+      </div>
+      <div class="bs-head">
+        <div>
+          <span class="eyebrow bs-eyebrow">✨ AI BRAINSTORM · NEW</span>
+          <h2>Plan your argument before you write</h2>
+          <p>Turn an essay topic into an interactive AI argument tree — build, expand and reshape your ideas, then convert any branch straight into a paragraph.</p>
+        </div>
+        <span class="bs-cost-pill" id="bsCostPill">✨ 5 Credit per map</span>
+      </div>
+      <div class="bs-canvas-shell" id="bsCanvasShell">
+        <!-- JS renders empty state / generating state / canvas / mobile tree here -->
+      </div>
+    </div>
+  </section>
+
+  <section class="coach-layer-panel" id="coachLayerPanel">
+    <div class="coach-header">
+      <div><span class="eyebrow">PERSONAL WRITING COACH</span><h2>Learn from every essay</h2><p id="coachHeadline">Analyze an essay to build your personal writing profile.</p></div>
+      <div class="coach-score"><span id="coachScore">0</span><small>/100</small><b>TSO Writing Score</b></div>
+    </div>
+    <div class="coach-hero-illustration">
+      <div class="coach-illustration-copy"><span class="coach-kicker">30 DAYS · 1 SMALL WIN A DAY</span><h3>Your writing can visibly improve.</h3><p>Follow a guided path, practise one skill at a time, and watch your TSO Writing Score grow.</p><div class="coach-mini-stats"><span><b id="coachDayCount">0</b>/30 days</span><span><b id="coachPlanProgress">0%</b> plan progress</span><span><b id="coachStreak">0</b> day streak</span></div></div>
+      <div class="coach-art" aria-hidden="true"><svg viewBox="0 0 300 190" role="img"><defs><linearGradient id="cg" x1="0" x2="1"><stop offset="0"/><stop offset="1" stop-opacity=".65"/></linearGradient></defs><circle cx="226" cy="64" r="45" class="art-sun"/><path d="M24 156 C70 112 103 142 140 112 S216 91 278 132 L278 176 L24 176Z" class="art-hill"/><rect x="88" y="55" width="98" height="72" rx="10" class="art-card"/><path d="M104 73h65M104 87h52M104 101h60" class="art-lines"/><path d="M69 122 L91 103 L108 117 L139 86 L163 107" class="art-chart"/><circle cx="69" cy="122" r="5" class="art-dot"/><circle cx="91" cy="103" r="5" class="art-dot"/><circle cx="108" cy="117" r="5" class="art-dot"/><circle cx="139" cy="86" r="5" class="art-dot"/><circle cx="163" cy="107" r="5" class="art-dot"/><path d="M196 115 q18-25 37 0" class="art-arrow"/><text x="202" y="143" class="art-text">LEVEL UP</text></svg></div>
+    </div>
+    <div class="coach-grid">
+      <article class="coach-card coach-wide"><h3>🧠 Your next best move</h3><p id="coachAction">Your next coaching action will appear here.</p><div id="coachPriorities" class="coach-tags"></div></article>
+      <article class="coach-card"><h3>📊 Personal Profile</h3><div id="profileSummary" class="profile-summary">No saved writing profile yet.</div></article>
+      <article class="coach-card coach-plan"><h3>🎯 30-Day Writing Journey</h3><div class="plan-progress"><span id="planProgressBar"></span></div><div id="improvementPlan" class="plan-list">Analyze an essay to generate your plan.</div></article>
+      <article class="coach-card"><h3>🔄 Before → After</h3><div id="beforeAfter" class="before-after">Your next analysis will create a comparison.</div></article>
+      <article class="coach-card"><h3>🧩 Mistake Memory</h3><div id="mistakeMemory" class="mistake-memory">Repeated mistakes will be remembered here.</div></article>
+      <article class="coach-card"><h3>📈 Progress History</h3><div id="coachHistory" class="history-list">Your saved essay scores will appear here.</div></article>
+    </div>
+  </section>
+
+  <div class="repeat-popover hidden" id="repeatPopover">
+    <div class="repeat-head"><b>Repeated word</b><button type="button" id="repeatClose" aria-label="Close">×</button></div>
+    <div class="repeat-body"><div id="repeatWordInfo"></div><div class="repeat-choices" id="repeatChoices"></div></div>
+  </div>
+  </div>
+  <nav class="edu-mobile-nav" aria-label="Quick navigation" id="eduMobileNav">
+    <div class="edu-mobile-nav-indicator" id="eduMobileNavIndicator" aria-hidden="true"></div>
+    <button type="button" class="nav-grammar-btn" data-scroll-target="grammarAcademy"><span>📚</span><small data-i18n="navGrammarShort">Grammar</small></button>
+    <button type="button" data-scroll-target="vocabularyCoach"><span>🧠</span><small>Vocab</small></button>
+    <button type="button" data-scroll-target="generate-card"><span>✦</span><small data-i18n="navWrite">Write</small></button>
+    <button type="button" data-scroll-target="analysis-editor"><span>⌕</span><small data-i18n="navAnalyze">Analyze</small></button>
+    <button type="button" data-scroll-target="ideaMapCanvas"><span>⌘</span><small data-i18n="navIdeas">Ideas</small></button>
+    <button type="button" data-scroll-target="naturalWritingCard"><span>✍</span><small data-i18n="navCoach">Coach</small></button>
+    <button type="button" data-scroll-target="brainstormPanel"><span>✨</span><small data-i18n="navBrainstorm">Brainstorm</small></button>
+    <button type="button" data-scroll-target="coachLayerPanel"><span>↗</span><small data-i18n="navProgress">Progress</small></button>
+    <button type="button" id="mobileNavRankingBtn"><span>🏆</span><small data-i18n="navRanking">Ranking</small></button>
+    <a href="/" id="mobileNavBackToJobBoard"><span>⌂</span><small data-i18n="navJobBoard">Job Board</small></a>
+  </nav>
+</main>
+<script src="/edu/static/app.js?v=20260903-mobile-nav-fix-v3"></script>
+<script src="/edu/static/brainstorm.js?v=20260831-brainstorm-v1" defer></script>
+<script src="/edu/static/grammar.js?v=20260904-grammar-v5" defer></script>
+<script src="/edu/static/vocabulary.js?v=20260905-vocab-v1" defer></script>
+</body></html>

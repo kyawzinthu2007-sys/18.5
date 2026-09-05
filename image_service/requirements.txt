@@ -1,0 +1,6 @@
+runpod>=1.7.0
+torch>=2.1.0
+diffusers>=0.29.0
+transformers>=4.41.0
+accelerate>=0.30.0
+safetensors>=0.4.3
